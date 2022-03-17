@@ -1,0 +1,68 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #152238;
+}
+
+button {
+    background-color: transparent;
+    padding: 15px 45px;
+    color: #fff;
+    font-size: 25px;
+    cursor: pointer;
+    border: none;
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+    margin: 0 10px;
+}
+
+.animation {
+    position: absolute;
+    height: 200px;
+    left: 30px;
+    right: 30px;
+    top: -100px;
+    bottom: -100px;
+    background-color: rgb(233, 94, 94);
+    animation-name: arrow;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+} 
+
+.button-real {
+    position: absolute;
+    top: 3px;
+    right: 3px;
+    bottom: 3px;
+    left: 3px;
+    background-color: #152238;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+button:hover {
+    background-color: rgb(233, 94, 94);
+    box-shadow: 1px 0px 35px 15px rgb(233 94 94);
+}
+
+.button-real:hover {
+    background-color: rgb(233, 94, 94);
+    box-shadow: 1px 0px 35px 15px rgb(233 94 94);
+}
+
+@keyframes arrow {
+    to {
+        transform: rotate(360deg);
+    }
+}
